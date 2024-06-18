@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.Domain", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.DAL", "PersonalFinance.DAL\PersonalFinance.DAL.csproj", "{DAD97827-7A34-4B4C-BEF7-40802E24963B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.API", "PersonalFinance.API\PersonalFinance.API.csproj", "{8E06233F-6800-4CCC-B931-66199475B38B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DAD97827-7A34-4B4C-BEF7-40802E24963B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAD97827-7A34-4B4C-BEF7-40802E24963B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAD97827-7A34-4B4C-BEF7-40802E24963B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E06233F-6800-4CCC-B931-66199475B38B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E06233F-6800-4CCC-B931-66199475B38B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E06233F-6800-4CCC-B931-66199475B38B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E06233F-6800-4CCC-B931-66199475B38B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
