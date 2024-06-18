@@ -1,0 +1,8 @@
+﻿services:
+  personalapi:
+    image: zafonacci/personalapi
+    build:
+      context: ./PersonalFinance.API
+    ports:
+      - "1000:1000"
+    restart: always
