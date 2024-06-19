@@ -4,6 +4,8 @@
 
 This repository provides a public API for managing personal finances using the Repository Design Pattern and CI/CD processes with Jenkins and Docker.
 
+Api url: http://217.195.207.56:1000/swagger/index.html
+
 ## Project Structure
 
 - **PersonalFinance.API**: API endpoints
