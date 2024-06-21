@@ -6,10 +6,6 @@ namespace PersonalFinance.API.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Webhook Test!", "Bracing Test 2", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -18,9 +14,18 @@ namespace PersonalFinance.API.Controllers
             _logger = logger;
         }
 
+        private static readonly string[] Summaries = new[]
+        {
+            "Webhook Test!", "Bracing Test 2", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
+
+
+
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("Weather forecast retrieved");
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -28,6 +33,7 @@ namespace PersonalFinance.API.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+
         }
     }
 }
